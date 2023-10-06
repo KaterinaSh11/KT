@@ -1,0 +1,40 @@
+==========инициалзация делать всегда при создании проекта
+git init
+
+==========создать ветку(task - задача feature - небольшие изменения bug - исправление ошибки)
+git checkout -b task/KT-1
+
+==========все изменения добавить в ветку
+git add .
+
+==========принять изменения и создание коментария в ветке
+git commit -m 'коментарий'
+
+==========поменять текущую ветку
+git chekout develop
+
+==========графический интерфейс
+gitk 
+
+==========создаем файл с таким именем для того чтобы игнорировать изменения вписанных в него фйлов (указать адрес до файла).
+.gitignore
+
+==========проверяем статус
+git status
+
+==========в каждом файле проекта нужно оставить последнюю пустую строчку
+
+git config --global user.name "Ekaterina Shamrai"
+git config --global user.email shamraykaterina@gmail.com
+git config --global user.email katerina_kms@mail.ru
+git config --list | grep user.email
+
+отменяем и редактируем последний коммит
+git reset HEAD~
+
+Добавлени файла в коммит
+git add .
+git commit --amend --no-edit
+git commit --amend --author "Stanislav Shamrai <shamraipost@gmail.com>"
+
+
